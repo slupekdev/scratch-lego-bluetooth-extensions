@@ -204,7 +204,11 @@ var handleTelemetryModalOptOut = function handleTelemetryModalOptOut() {
     onTelemetryModalOptOut: handleTelemetryModalOptOut
   }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(WrappedGui, {
     canEditTitle: true,
-    canSave: false
+    backpackVisible: true,
+    showComingSoon: true,
+    backpackHost: backpackHost,
+    canSave: false,
+    onClickLogo: onClickLogo
   }), appTarget);
 });
 
