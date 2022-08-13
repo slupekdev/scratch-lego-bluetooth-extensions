@@ -33,7 +33,7 @@ jobs:
       - run: npm install @tensorflow-models/speech-commands@^0.4.2 --force
         name: 'Install @tensorflow-models/speech-commands'
         working-directory: ./scratch-gui/node_modules/scratch-vm
-      - run: npm install @tensorflow/tfjs@^1.5.1
+      - run: npm install @tensorflow/tfjs@^1.5.1 --force
         name: 'Install @tensorflow/tfjs@'
         working-directory: ./scratch-gui/node_modules/scratch-vm
       - uses: actions/checkout@v2
