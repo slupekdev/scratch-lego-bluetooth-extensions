@@ -18,6 +18,24 @@ jobs:
           path: ./scratch-gui
       - run: npm ci
         working-directory: ./scratch-gui
+      - run: npm install @teachablemachine/image@^0.8.4
+        name: 'Install @teachablemachine/image'
+        working-directory: ./scratch-gui/node_modules/scratch-vm
+      - run: npm install @teachablemachine/pose@^0.8.6
+        name: 'Install @teachablemachine/pose'
+        working-directory: ./scratch-gui/node_modules/scratch-vm
+      - run: npm install @tensorflow-models/handpose@0.0.3
+        name: 'Install @tensorflow-models/handpose'
+        working-directory: ./scratch-gui/node_modules/scratch-vm
+      - run: npm install @tensorflow-models/posenet@^2.2.1
+        name: 'Install @tensorflow-models/posenet'
+        working-directory: ./scratch-gui/node_modules/scratch-vm
+      - run: npm install @tensorflow-models/speech-commands@^0.4.2
+        name: 'Install @tensorflow-models/speech-commands'
+        working-directory: ./scratch-gui/node_modules/scratch-vm
+      - run: npm install @tensorflow/tfjs@^1.5.1
+        name: 'Install @tensorflow/tfjs@'
+        working-directory: ./scratch-gui/node_modules/scratch-vm
       - uses: actions/checkout@v2
         with:
           repository: slupekdev/scratch-lego-bluetooth-extensions
