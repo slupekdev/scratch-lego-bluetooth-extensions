@@ -8228,6 +8228,21 @@ var entry = {
   internetConnectionRequired: true
 };
 
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
 function _classCallCheck(instance, Constructor) {
   if (!(instance instanceof Constructor)) {
     throw new TypeError("Cannot call a class as a function");
@@ -11312,6 +11327,8 @@ var Scratch3IFTTTWebhooks = /*#__PURE__*/function () {
   _createClass(Scratch3IFTTTWebhooks, [{
     key: "getInfo",
     value: function getInfo() {
+      this._setupTranslations();
+
       return {
         id: 'iftttWebhooks',
         name: formatMessage({
@@ -11324,11 +11341,17 @@ var Scratch3IFTTTWebhooks = /*#__PURE__*/function () {
         blocks: [{
           opcode: 'setIftttKey',
           blockType: BlockType.COMMAND,
-          text: 'IFTTT key:[KEY]',
+          text: formatMessage({
+            id: 'iftttWebhooks.setIftttKey',
+            default: 'IFTTT key:[KEY]'
+          }),
           arguments: {
             KEY: {
               type: ArgumentType.STRING,
-              defaultValue: "key"
+              defaultValue: formatMessage({
+                id: 'iftttwebhooks.Key',
+                default: 'Key'
+              })
             }
           }
         }, {
@@ -11506,6 +11529,34 @@ var Scratch3IFTTTWebhooks = /*#__PURE__*/function () {
     key: "setIftttKey",
     value: function setIftttKey(args) {
       this.key = Cast.toString(args.KEY);
+    }
+  }, {
+    key: "_setupTranslations",
+    value: function _setupTranslations() {
+      var localeSetup = formatMessage.setup();
+      var translations = {
+        'pl': _defineProperty({
+          'iftttWebhooks.setIftttKey': 'Ustaw klucz IFTTT:[KEY]',
+          'iftttwebhooks.Key': 'klucz',
+          'iftttwebhooks.getIfttt': 'Wyślij zdarzenie [EVENT]',
+          'iftttwebhooks.defaultEvent': 'zdarzenie',
+          'iftttwebhooks.getIfttt1': 'Wyślij zdarzenie [EVENT] z parametrem [VALUE1]',
+          'iftttwebhooks.getIfttt2': 'Wyślij zdarzenie [EVENT] z parametrami [VALUE1] i [VALUE2]',
+          'iftttwebhooks.getIfttt3': 'Wyślij zdarzenie [EVENT] z parametrem [VALUE1], [VALUE2] i [VALUE3]',
+          'iftttwebhooks.defaultValue1': 'wartość 1',
+          'iftttwebhooks.defaultValue2': 'wartość 2',
+          'iftttwebhooks.defaultValue3': 'wartość 3',
+          'iftttWebhooks.categoryName': 'IFTTT Webhooks'
+        }, "iftttWebhooks.categoryName", 'IFTTT Webhooks')
+      };
+
+      for (var locale in translations) {
+        if (!localeSetup.translations[locale]) {
+          localeSetup.translations[locale] = {};
+        }
+
+        Object.assign(localeSetup.translations[locale], translations[locale]);
+      }
     }
   }]);
 

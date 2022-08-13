@@ -13067,6 +13067,20 @@ var setupTranslations$1 = function setupTranslations(formatMessage) {
       'legobluetooth.pitch': 'ピッチ',
       'legobluetooth.roll': 'ロール',
       'legobluetooth.yaw': 'ヨー'
+    },
+    'pl': {
+      'legobluetooth.black': '(0) czarny',
+      'legobluetooth.pink': '(1) różowy',
+      'legobluetooth.purple': '(2) fioletowy',
+      'legobluetooth.blue': '(3) niebieski',
+      'legobluetooth.lightBlue': '(4) jasnoniebieski',
+      'legobluetooth.lightGreen': '(5) jasnozielony',
+      'legobluetooth.green': '(6) zielony',
+      'legobluetooth.yellow': '(7) żółty',
+      'legobluetooth.orange': '(8) pomarańczowy',
+      'legobluetooth.red': '(9) czerwony',
+      'legobluetooth.white': '(10) biały',
+      'legobluetooth.noColor': '(-1) brak koloru'
     }
   };
 
@@ -15781,6 +15795,17 @@ var Scratch3LegoRemoteBlocks = /*#__PURE__*/function () {
           'legoremote.button.minus': 'マイナス',
           'legoremote.button.stop': 'あかい',
           'legoremote.button.any': 'どれかの'
+        },
+        'pl': {
+          'legoremote.whenButton': '[PORT] kiedy kliknięto [BUTTON]',
+          'legoremote.isButton': '[PORT] przycisk [BUTTON] kliknięty?',
+          'legoremote.getButtonA': 'przycisk A',
+          'legoremote.getButtonB': 'przycisk B',
+          'legoremote.setHubLEDColor': 'ustaw kolor LED na [COLOR]',
+          'legoremote.button.plus': 'plus',
+          'legoremote.button.minus': 'minus',
+          'legoremote.button.stop': 'stop',
+          'legoremote.button.any': 'dowolny'
         }
       });
     }
