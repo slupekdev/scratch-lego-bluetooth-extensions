@@ -30,7 +30,7 @@ jobs:
       - run: npm install @tensorflow-models/posenet@^2.2.1 --force
         name: 'Install @tensorflow-models/posenet'
         working-directory: ./scratch-gui/node_modules/scratch-vm
-      - run: npm install @tensorflow-models/speech-commands@^0.4.2
+      - run: npm install @tensorflow-models/speech-commands@^0.4.2 --force
         name: 'Install @tensorflow-models/speech-commands'
         working-directory: ./scratch-gui/node_modules/scratch-vm
       - run: npm install @tensorflow/tfjs@^1.5.1
