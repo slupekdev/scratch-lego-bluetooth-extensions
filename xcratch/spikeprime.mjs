@@ -8612,13 +8612,13 @@ var img$1 = "data:image/svg+xml,%3c%3fxml version='1.0' encoding='UTF-8'%3f%3e%3
 var img = "data:image/svg+xml,%3c%3fxml version='1.0' encoding='UTF-8'%3f%3e%3csvg width='79px' height='123px' viewBox='0 0 79 123' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e %3ctitle%3espikeprime-illustration%3c/title%3e %3cg id='spikeprime-illustration' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3e %3cg id='Group' transform='translate(1.000000%2c 1.000000)'%3e %3crect id='Rectangle' stroke='%237C87A5' fill='white' x='0' y='0' width='77' height='121' rx='5.5'%3e%3c/rect%3e %3ccircle id='Oval' stroke='%237C87A5' stroke-width='0.5' cx='5.5' cy='5.5' r='3.5'%3e%3c/circle%3e %3ccircle id='Oval-Copy-3' stroke='%237C87A5' stroke-width='0.5' cx='71.5' cy='5.5' r='3.5'%3e%3c/circle%3e %3ccircle id='Oval-Copy' stroke='%237C87A5' stroke-width='0.5' cx='5.5' cy='115.5' r='3.5'%3e%3c/circle%3e %3ccircle id='Oval-Copy-5' stroke='%237C87A5' stroke-width='0.5' cx='71.5' cy='115.5' r='3.5'%3e%3c/circle%3e %3cpath d='M16.5%2c99 C13.4624339%2c99 11%2c101.462434 11%2c104.5 C11%2c107.537566 13.4624339%2c110 16.5%2c110 C38.5%2c110 38.5%2c110 60.5%2c110 C63.5375661%2c110 66%2c107.537566 66%2c104.5 C66%2c101.462434 63.5375661%2c99 60.5%2c99 C38.5%2c99 38.5%2c99 16.5%2c99 Z' id='Path' stroke='%237C87A5' stroke-width='0.5'%3e%3c/path%3e %3ccircle id='Center-Button' stroke='%237C87A5' stroke-width='1.5' fill='white' cx='38.5' cy='104.5' r='10.5'%3e%3c/circle%3e %3ccircle id='Bluetooth' stroke='%234C97FF' stroke-width='1.5' cx='60.5' cy='16.5' r='6.5'%3e%3c/circle%3e %3cg id='matrix' transform='translate(12.000000%2c 34.000000)' fill='%23FFD500'%3e %3crect id='Rectangle-Copy-24' x='0' y='11' width='9' height='9'%3e%3c/rect%3e %3crect id='Rectangle-Copy-26' x='11' y='0' width='9' height='9'%3e%3c/rect%3e %3crect id='Rectangle-Copy-25' x='11' y='11' width='9' height='9'%3e%3c/rect%3e %3crect id='Rectangle-Copy-29' x='22' y='11' width='9' height='9'%3e%3c/rect%3e %3crect id='Rectangle-Copy-28' x='33' y='0' width='9' height='9'%3e%3c/rect%3e %3crect id='Rectangle-Copy-27' x='33' y='11' width='9' height='9'%3e%3c/rect%3e %3crect id='Rectangle-Copy-31' x='44' y='11' width='9' height='9'%3e%3c/rect%3e %3crect id='Rectangle-Copy-42' x='0' y='22' width='9' height='9'%3e%3c/rect%3e %3crect id='Rectangle-Copy-40' x='11' y='22' width='9' height='9'%3e%3c/rect%3e %3crect id='Rectangle-Copy-39' x='11' y='33' width='9' height='9'%3e%3c/rect%3e %3crect id='Rectangle-Copy-38' x='22' y='22' width='9' height='9'%3e%3c/rect%3e %3crect id='Rectangle-Copy-37' x='22' y='33' width='9' height='9'%3e%3c/rect%3e %3crect id='Rectangle-Copy-36' x='33' y='22' width='9' height='9'%3e%3c/rect%3e %3crect id='Rectangle-Copy-35' x='33' y='33' width='9' height='9'%3e%3c/rect%3e %3crect id='Rectangle-Copy-34' x='44' y='22' width='9' height='9'%3e%3c/rect%3e %3crect id='Rectangle-Copy-45' x='22' y='44' width='9' height='9'%3e%3c/rect%3e %3c/g%3e %3c/g%3e %3c/g%3e%3c/svg%3e";
 
 var entry = {
-  name: 'LEGO Education SPIKE Prime',
+  name: 'LEGO Education SPIKE Prime (Legacy)',
   extensionId: 'spikeprime',
   collaborator: 'bricklife',
   iconURL: img$2,
   insetIconURL: img$1,
   description: /*#__PURE__*/React.createElement(FormattedMessage, {
-    defaultMessage: "Build interactive robots and more.",
+    defaultMessage: "Build interactive robots and more. (doesn't work on Windows)",
     id: "gui.extension.spikeprime.description"
   }),
   featured: true,
@@ -15198,7 +15198,7 @@ var Scratch3SpikePrimeBlocks = /*#__PURE__*/function () {
       setupTranslations(formatMessage);
       return {
         id: Scratch3SpikePrimeBlocks.EXTENSION_ID,
-        name: 'SPIKE Prime',
+        name: 'SPIKE Prime (Legacy)',
         blockIconURI: blockIconURI,
         showStatusButton: true,
         blocks: [{
